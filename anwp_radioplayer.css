@@ -1,0 +1,74 @@
+/* Contenedor del reproductor */
+.anwp-radio-player {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 15px 10px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Nombre de la estación */
+.anwp-radio-player h3 {
+    margin: 0;
+    font-size: 18px;
+    flex: 1;
+    text-align: left;
+}
+
+/* Contenedor de audio */
+.anwp-radio-player audio {
+    margin-top: 5px;
+    flex: 2;
+    background-color: #333; /* Cambiar el fondo del reproductor */
+    border-radius: 0; /* Bordes redondeados */
+    color: #fff; /* Cambiar el color del texto */
+}
+
+.anwp-radio-player audio::-webkit-media-controls-panel {
+    background-color: #333;
+    color: #fff;
+    border-radius: 0;
+}
+
+.anwp-radio-player audio::-webkit-media-controls-play-button,
+.anwp-radio-player audio::-webkit-media-controls-volume-control-container,
+.anwp-radio-player audio::-webkit-media-controls-current-time-display,
+.anwp-radio-player audio::-webkit-media-controls-time-remaining-display {
+    color: #fff; /* Cambiar el color de los controles */
+}
+
+/* Pista en reproducción */
+.anwp-radio-player #anwp-current-track {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+/* Botón de cerrar */
+.anwp-radio-player .close-button {
+    background-color: #444;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+/* Botón de cerrar al pasar el cursor */
+.anwp-radio-player .close-button:hover {
+    background-color: #555;
+}
+
+/* Icono de cerrar */
+.anwp-radio-player .close-button::after {
+    content: "✖";
+}
