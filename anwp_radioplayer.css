@@ -50,6 +50,7 @@
     font-size: 14px;
     margin-top: 10px;
     color: #ccc;
+    text-align: left;
 }
 
 /* Botón de cerrar */
@@ -71,4 +72,8 @@
 /* Icono de cerrar */
 .anwp-radio-player .close-button::after {
     content: "✖";
+}
+
+.anwp-radio-meta, .anwp-audio-player{
+    padding: 0 10px;
 }
